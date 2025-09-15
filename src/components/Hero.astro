@@ -1,9 +1,28 @@
+---
+import BigArticle from "./BigArticle.astro";
+import narnia from "../assets/narniaskabet.jpg";
+---
+
 <section id="hero">
-  <img src="./assets/1narniaskabet.jpg" alt="et billede af SPYO grafitti" />
-  <p>UNMISSABLE FREE GEMS</p>
-  <a href="spyo.astro">SPYO WALK</a>
+  <BigArticle
+    Link="../pages/spyo.astro"
+    ArticleImage={narnia}
+    ArticleType="UNMISSABLE FREE GEMS"
+    ArticleTitle="SPYO WALK"
+  />
 </section>
 
 <style>
   /* Hero style */
+  #hero {
+  }
+
+  img {
+  }
+
+  #hero h3 {
+  }
+
+  #hero h2 {
+  }
 </style>

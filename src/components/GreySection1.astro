@@ -1,0 +1,50 @@
+---
+import Card from "./Card.astro";
+import defy from "../assets/defyunjustlaws.jpg";
+import berte from "../assets/berte.jpg";
+import glyp from "../assets/glyptoteket.jpg";
+---
+
+<section>
+  <p>FEATURED ARTICLES</p>
+  <h2>UNMISSABLE THINGS IN COPENHAGEN</h2>
+  <div>
+    <Card
+      Link=""
+      ArticleImage={glyp}
+      ArticleType="UNMISSABLE"
+      ArticleTitle="MUSEUMS IN COPENHAGEN"
+    />
+    <Card
+      Link=""
+      ArticleImage={berte}
+      ArticleType="LOCAL CRTV"
+      ArticleTitle="BEING CREATIVE IS A WAY OF LIFE; MEET ALBERTE JENSEN IN HER OWN ENVIRONMENT"
+    />
+    <Card
+      Link="../pages/spyo.astro"
+      ArticleImage={defy}
+      ArticleType="FREE GEM"
+      ArticleTitle=" ACTIVISM HIDDEN IN PLAIN SIGHT ALL OVER COPENHAGEN"
+    />
+  </div>
+</section>
+
+<style>
+  /* Grey Section style */
+  section {
+    background-color: #333333;
+    padding: 2em;
+  }
+
+  div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5em;
+  }
+
+  p,
+  h2 {
+    color: white;
+  }
+</style>

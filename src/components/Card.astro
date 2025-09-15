@@ -1,13 +1,36 @@
 ---
-const { ArticleType, ArticleTitle } = Astro.props;
+import { Image } from "astro:assets";
+const { Link, ArticleType, ArticleTitle, ArticleImage } = Astro.props;
 ---
 
-<a href="">
-  <img src="" alt="" />
-  <h3>{ArticleType}</h3>
-  <h2>{ArticleTitle}</h2>
+<a href={Link}>
+  <div id="cardImage">
+    {ArticleImage && <Image src={ArticleImage} alt="grafitti art by SPYO" />}
+  </div>
+  <div id="text">
+    <h3>{ArticleType}</h3>
+    <h2>{ArticleTitle}</h2>
+  </div>
 </a>
 
 <style>
   /* Cards style */
+  #cardImage {
+  }
+  a img {
+    max-width: 100%;
+    height: auto;
+  }
+  #text {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+  }
+  h3 {
+    font-size: 15px;
+    margin-top: 0;
+  }
+  h2 {
+    margin-top: 0;
+    font-size: 18px;
+  }
 </style>

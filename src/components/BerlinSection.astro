@@ -1,14 +1,35 @@
 ---
 import Card from "./Card.astro";
 import BigArticle from "./BigArticle.astro";
+import garden from "../assets/garden.jpg";
+import exhibitions from "../assets/exhibitions.jpg";
+import market from "../assets/market.jpg";
 ---
 
 <section>
-  <BigArticle />
-  <Card />
-  <Card />
+  <BigArticle
+    ArticleImage={garden}
+    ArticleType=" FREE GEM"
+    ArticleTitle="A HIDDEN GEM YOU SHOULDN'T MISS IN THE HEART OF BERLIN!"
+  />
+  <div>
+    <p>FEATURED ARTICLES</p>
+    <h2>UNMISSABLE THINGS IN BERLIN</h2>
+    <Card ArticleImage={market} ArticleType="UNMISSABLE" ArticleTitle="" />
+    <Card ArticleImage={exhibitions} ArticleType="UNMISSABLE" ArticleTitle="" />
+  </div>
 </section>
 
 <style>
   /* Berlin Section */
+
+  section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+  }
 </style>

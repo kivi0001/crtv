@@ -1,13 +1,29 @@
 ---
-const { ArticleType, ArticleTitle } = Astro.props;
+import { Image } from "astro:assets";
+const { ArticleImage, ArticleType, ArticleTitle } = Astro.props;
 ---
 
 <section id="article">
-  <img src="" alt="" />
+  {ArticleImage && <Image src={ArticleImage} alt="grafitti art by SPYO" />}
   <p>{ArticleType}</p>
   <h2>{ArticleTitle}</h2>
 </section>
 
 <style>
   /* Article style */
+  #article {
+    margin: 1em 5em 1em 5em;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  p {
+    text-align: center;
+    font-size: 20px;
+  }
+  h2 {
+    text-align: center;
+    font-size: 32px;
+  }
 </style>
