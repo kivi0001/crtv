@@ -1,0 +1,28 @@
+---
+import Card from "./Card.astro";
+import berte from "../assets/berte.jpg";
+import arne from "../assets/arne.jpg";
+---
+
+<section id="localcrtv">
+  <Card
+    ArticleImage={berte}
+    ArticleType="LOCAL CRTV"
+    ArticleTitle="BEING CREATIVE IS A WAY OF LIFE; MEET ALBERTE JENSEN IN HER OWN ENVIRONMENT"
+  />
+  <Card
+    ArticleImage={arne}
+    ArticleType="LOCAL CRTV"
+    ArticleTitle="FROM CONCEPT TO CREATION: MEET ARNE MEYER ONE OF THE BRILLIANT MINDS WORKING AT CEE CEE CREATIVE"
+  />
+</section>
+
+<style>
+  /* Local CRTV style */
+  #localcrtv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10em;
+    margin: 5px 10px 5px 10px;
+  }
+</style>

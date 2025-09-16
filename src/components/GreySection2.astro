@@ -1,0 +1,50 @@
+---
+import Card from "./Card.astro";
+import garn from "../assets/garn.jpg";
+import penpapir from "../assets/penpapir.jpg";
+import embroidery from "../assets/embroidery.jpg";
+---
+
+<section>
+  <p>JOIN THE COMMUNITY</p>
+  <h2>CHALLENGES</h2>
+  <div>
+    <Card
+      Link=""
+      ArticleImage={embroidery}
+      ArticleType="EMBROIDERY"
+      ArticleTitle="JOIN THE EMBROIDERY CHALLENGE HOSTED BY KIA VINTHER"
+    />
+    <Card
+      Link=""
+      ArticleImage={garn}
+      ArticleType="KNITTING"
+      ArticleTitle="JOIN THE KNIT-ALONG HOSTED BY KNITTING GENIUS KATJA ELISABETH"
+    />
+    <Card
+      Link=""
+      ArticleImage={penpapir}
+      ArticleType="DRAWING"
+      ArticleTitle="JOIN THE DRAWING COMPETITION: MANGA EDITION"
+    />
+  </div>
+</section>
+
+<style>
+  /* Grey Section style */
+  section {
+    background-color: #333333;
+    padding: 2em;
+  }
+
+  div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5em;
+  }
+
+  p,
+  h2 {
+    color: white;
+  }
+</style>
