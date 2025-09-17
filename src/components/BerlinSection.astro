@@ -7,12 +7,12 @@ import market from "../assets/market.jpg";
 ---
 
 <section>
-  <BigArticle
-    ArticleImage={garden}
-    ArticleType=" FREE GEM"
-    ArticleTitle="A HIDDEN GEM YOU SHOULDN'T MISS IN THE HEART OF BERLIN!"
-  />
-  <div>
+  <div id="bigarticle">
+    <img src="/src/assets/garden.jpg" alt="picture of a garden" />
+    <h3>FREE GEM</h3>
+    <h2>A HIDDEN GEM YOU SHOULDN'T MISS <br /> IN THE HEART OF BERLIN!</h2>
+  </div>
+  <div id="featured">
     <p>FEATURED ARTICLES</p>
     <h2>UNMISSABLE THINGS IN BERLIN</h2>
     <Card ArticleImage={market} ArticleType="UNMISSABLE" ArticleTitle="" />
@@ -26,10 +26,42 @@ import market from "../assets/market.jpg";
   section {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    padding: 4em 5em 4em 5em;
+  }
+
+  img {
+    width: 800px;
+    height: 500px;
+    object-fit: cover;
+    place-self: center;
+  }
+
+  p {
+    text-decoration: underline;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  h2 {
+    margin-top: 0;
   }
 
   div {
     display: flex;
     flex-direction: column;
+  }
+
+  #bigarticle {
+    margin-top: 1em;
+  }
+  #bigarticle h2 {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  #featured h2 {
+    letter-spacing: 0.5px;
   }
 </style>
