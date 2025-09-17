@@ -1,0 +1,71 @@
+<header class="header">
+  <!--Menu knappen -->
+  <div class="menu" id="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <!-- Navigationen i burger menuen -->
+  <nav class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="/Home">Home</a></li>
+      <li><a href="/About">About</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!--Logo i midten -->
+  <div class="logo">
+    <img src="src/assets/crtvtoplogo.png" alt="CRTV ESC" />
+  </div>
+
+  <!--Search knappen -->
+  <div class="search">
+    <span class="icon"></span>
+  </div>
+</header>
+
+<style>
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 1.5rem;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+
+  /* Logo i midten */
+
+  .logo img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    margin-left: 520px;
+    height: 50px;
+    cursor: pointer;
+  }
+
+  /* Search ikon (lup) */
+  .search {
+    width: 22px;
+    height: 22px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    position: relative;
+    margin-left: auto;
+    cursor: pointer;
+  }
+
+  .search .icon::after {
+    content: "";
+    position: absolute;
+    right: -6px;
+    bottom: -2px;
+    width: 8px;
+    height: 2px;
+    background: #000;
+    transform: rotate(45deg);
+  }
+</style>
