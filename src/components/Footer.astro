@@ -1,0 +1,93 @@
+<footer class="footer">
+  <div class="footer-left">
+    <h2>DESIGN NEWS TO YOUR INBOX</h2>
+    <form class="newsletter-form">
+      <input type="email" placeholder="Email" required />
+      <button type="submit">SIGN UP</button>
+    </form>
+    <p class="brand">CREATIVE ESCAPE</p>
+  </div>
+
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background: #2b2b2b;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 3rem 2rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .footer-left {
+    max-width: 400px;
+  }
+
+  .footer-left h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .newsletter-form {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+
+  .newsletter-form input {
+    flex: 1;
+    padding: 0.6rem;
+    border: none;
+    outline: none;
+  }
+
+  .newsletter-form button {
+    padding: 0.6rem 1rem;
+    border: none;
+    background: #fff;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .newsletter-form button:hover {
+    background: #ddd;
+  }
+
+  .brand {
+    font-size: 0.7rem;
+    margin-top: 1rem;
+    letter-spacing: 1px;
+  }
+
+  .footer-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-right li {
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-right a {
+    text-decoration: none;
+    color: #ccc;
+    transition: color 0.2s;
+  }
+
+  .footer-right a:hover {
+    color: #fff;
+  }
+</style>
