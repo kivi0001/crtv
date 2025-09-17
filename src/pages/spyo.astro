@@ -1,0 +1,111 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Section from "../components/Section.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout>
+  <Header />
+
+  <main class="container">
+    <section class="hero">
+      <h1>SPYO WALK</h1>
+      <p>All over Copenhagen you can find local graffiti painter, and selfproclaimed anarchist, SPYO’s art. SPYO makes political activism through graffiti art, meant to provoke thought as people pass through town on their way to work.</p>
+    </section>
+
+    <Section
+      image="src/assets/graffiti1.png"
+      title="THE ANONYMOUS ARTIST"
+      text="SPYO has been active for many years, but remains anonymous. A few years ago, SPYO made graffiti art on the facade of the danish State Museum of Art. The museum had the graffiti painted over, but only a few years later, they themselves had SPYO's art presented inside their galleries."
+    />
+
+    <Section
+      image="src/assets/graffiti2.png"
+      title="EYES AND MIND OPEN"
+      text="I am a loser in the eyes of society - but I don't see being a loser as a bad thing - SPYO (til VICE MEDIA) Keep a lookout for SPYO's thought provocing art, which he calls Public Service. Take a walk through the streets of Copenhagen, and notice his art everywhere on rooftops and walls. His public service work can be found all over town; look for his characteristic aquare letters, activistic messages, and his iconic birds. "
+    />
+
+    <Section image="src/assets/graffiti3.png" />
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #111;
+    line-height: 1.6;
+    background: #fff;
+  }
+
+  /* Layout container */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  /* Hero */
+  .hero {
+    text-align: center;
+    margin: 5rem 0;
+  }
+  .full-bleed img {
+    width: 100vw;
+    max-width: none;
+    margin: 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  /* Footer */
+  footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  footer h3 {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  footer form {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+
+  footer input {
+    padding: 0.5rem;
+    flex: 1 1 200px;
+  }
+
+  footer button {
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+  }
+
+  footer .brand {
+    font-size: 0.8rem;
+    color: #aaa;
+    margin-top: 1rem;
+  }
+</style>
